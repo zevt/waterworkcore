@@ -42,7 +42,7 @@ public class AddressRestApi {
 //
 //    String payload = new Gson().toJson(response.getBody());
 
-    log.info("Address: {}", address.toString());
+//    log.info("Address: {}", address.toString());
 
     GeocodingResult[] results = this.geoService.getGeoCodingResults(address);
     Gson gson = new GsonBuilder().setPrettyPrinting().create();
